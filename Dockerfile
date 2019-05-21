@@ -16,7 +16,7 @@ ENV DOTNET_CLI_TELEMETRY_OPTOUT=1 \
     NUGET_XMLDOC_MODE=skip
 
 RUN apt-get update \
-    && apt-get install wget gpg -y \
+    && apt-get install wget gpg gcc libz-dev -y \
     #
     # https://dotnet.microsoft.com/download/linux-package-manager/debian9/sdk-current
     && wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.asc.gpg \
