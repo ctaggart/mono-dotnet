@@ -25,7 +25,7 @@ RUN apt-get update \
     && mv prod.list /etc/apt/sources.list.d/microsoft-prod.list \
     && apt-get install apt-transport-https -y \
     && apt-get update \
-    && apt-get install dotnet-sdk-2.2 -y \
+    && apt-get install dotnet-sdk-2.2=2.2.203-1 -y \
     #
     # Delete the NuGetFallbackFolder
     # it is 1.1G & does not work with NuGet lock files
