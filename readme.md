@@ -1,4 +1,4 @@
-# ctaggart/mono Docker image
+# ctaggart/mono-dotnet Docker image
 
 https://hub.docker.com/r/ctaggart/mono-dotnet
 
